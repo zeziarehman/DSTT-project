@@ -1,0 +1,39 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Training outputs (large — share weights via GitHub Releases instead) ----
+runs/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.zip
+*.cache
+
+# ---- Datasets (download from Kaggle, never commit) ----
+dataset/
+dataset_test/
+datasets/
+data/
+*.jpg
+*.jpeg
+*.png
+!docs/**/*.png
+
+# ---- Kaggle / secrets ----
+kaggle.json
+.env
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,30 @@
+# YOLO-RD-T-26 v2 — road defect detection on N-RDD2024
+# Tested on Kaggle (Python 3.12, Tesla T4) with:
+#   ultralytics 8.4.150 | torch 2.10.0+cu128 | torch-pruning 1.6.0
+#
+# Install PyTorch FIRST for your CUDA version (see https://pytorch.org/get-started/locally/),
+# e.g.:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+# then:  pip install -r requirements.txt
+
+# --- core: model, training, YOLO26 configs (need >= 8.4) ---
+ultralytics>=8.4.0
+ultralytics-thop>=2.0.0
+torch>=2.2
+torchvision>=0.17
+
+# --- data handling & config ---
+numpy
+pandas
+pyyaml
+pillow
+
+# --- plots / EDA ---
+matplotlib
+seaborn
+
+# --- optional: structured pruning experiment (Section 8c) ---
+torch-pruning>=1.6.0
+
+# --- running the notebook locally ---
+jupyter
+ipython
