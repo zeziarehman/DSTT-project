@@ -8,7 +8,7 @@ it with a bottleneck Vision Transformer and a new **Crack Strip Attention (CSA)*
 
 | Model | Params (fused) | GFLOPs | Precision | Recall | F1 | mAP@0.5 | mAP@0.5:0.95 |
 |---|---|---|---|---|---|---|---|
-| YOLO-RD (paper reference) | — | — | — | — | 51.0 | 45.5 | 26.2 |
+| YOLO-RD (paper reference) | 6,455,256 | 24.0 | — | — | 51.0 | 45.5 | 26.2 |
 | **YOLO-RD-T-26 v2 (this repo)** | **5,018,703** | **17.3** | **68.0** | **48.3** | **56.5** | **52.9** | **30.1** |
 
 Trained 50 epochs with a COCO warm start. Inference: 11.5 ms/image on a Tesla T4.
